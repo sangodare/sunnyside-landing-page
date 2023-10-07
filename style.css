@@ -1,0 +1,543 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+}
+
+svg {
+    fill: hsl(167, 40%, 24%);
+}
+ 
+footer {
+    background: hsl(168, 34%, 41%);
+    padding-block: 3rem;
+    text-align: center;
+}
+
+.header-section {
+    min-height: 30rem;
+    background-image: url(./images/mobile/image-header.jpg);
+}
+
+h1, h2 {
+    font-size: clamp(1rem, 7vw, 2rem);
+}
+
+h3, p, footer ul, span, .learn-more-link {
+    font-size: clamp(.8rem, 5vw, 1.125rem);
+}    
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    font-size: clamp(.8rem, 7vw, 2rem);
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+ 
+}
+
+h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: .2em;
+}
+
+.main h2 {
+    color: hsl(212, 27%, 19%);
+}
+
+p {
+    line-height: 1.5;
+    margin-block: 2rem;
+    font-family: 'Barlow', serif;
+}
+
+.main p {
+    color: hsl(210, 4%, 67%);
+}
+
+.primary-navigation, footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    font-family: 'Barlow', serif;
+}
+
+.primary-navigation a, footer a {
+    text-decoration: none;
+}
+
+.primary-navigation a:hover {
+    color: hsl(198, 62%, 26%);
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.contact-button {
+    text-transform: uppercase;
+    padding: .65em 1em ;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Fraunces', serif;
+}
+
+.learn-more-link {
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    position: relative;
+    cursor: pointer;
+}
+
+.learn-more-link::after {
+    content: '';
+    position: absolute;
+    height: .8rem;
+    left: -10px;
+    right: -10px;
+    top: 60%;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 100px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.third-section-text .learn-more-link::after {
+    background-color: hsl(7, 99%, 70%);
+}
+
+ .learn-more-link:hover::after, .learn-more-link:focus::after, .learn-more-link:active::after {
+    opacity: 1;
+}
+
+ .header-section, .second-section-bg-image, .third-section-bg-image, .graphic-design-section, .photography-section, .last-section-bg-images {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.second-section-bg-image, .third-section-bg-image {
+    min-height: 20rem;
+}
+
+.second-section-bg-image {  
+    background-image: url(./images/mobile/image-transform.jpg);
+}
+
+.third-section-bg-image {
+    background-image: url(./images/mobile/image-stand-out.jpg);
+}
+
+.graphic-design-section, .photography-section {
+    min-height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.graphic-design-section {
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+    color: hsl(167, 40%, 24%);
+}
+
+.photography-section {
+    background-image: url(./images/mobile/image-photography.jpg);
+    color: hsl(198, 62%, 26%);
+}
+
+.testimonial-section {
+    text-align: center;
+    color: hsl(212, 27%, 19%);
+}
+
+.testimonial-section img {
+    border-radius: 50%;
+    height: 100px;
+}
+
+.testimonial-section-span {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);    
+}
+
+.testimonial-section-span + .testimonial-section-span {
+    margin-top: .2rem;
+    color: hsl(210, 4%, 67%);
+    font-family: 'Barlow', serif;
+}
+
+.last-section-bg-images {
+    min-height: 15rem;
+}
+
+.milk-bottles {
+    background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+}
+
+.orange {
+    background-image: url(./images/mobile/image-gallery-orange.jpg);
+}
+
+.cone {
+    background-image: url(./images/mobile/image-gallery-cone.jpg);
+}
+
+.sugar-cubes {
+    background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+footer a {
+    color: hsl(167, 40%, 24%);
+}
+footer a:hover {
+    color: hsl(0, 0%, 100%);
+}
+footer ul {
+    margin-block: 1rem 3rem;
+}
+
+.footer-icon + .footer-icon {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+
+
+@media (max-width:600px) {
+
+
+    h2 {
+        margin-inline: auto;
+        width: 70%; 
+    }
+
+    .main {
+        text-align: center;
+        padding-block: 5rem;
+      
+    }
+
+    .container {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .logo {
+        margin-top: 2rem;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        top: 1.3rem;
+        right: 1rem;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        background: transparent;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .hamburger, .hamburger::before, .hamburger::after {
+        display: block;
+        position: relative;
+        width: 1.5rem;
+        height: 3px;
+        background: hsl(0, 0%, 100%);
+        margin: 0 auto;
+        transition: all ease-in-out 500ms;
+    }
+
+    .hamburger::before, .hamburger::after {
+        content: '';
+        position: absolute;
+    }
+
+    .hamburger::before {
+        bottom: 8px;
+    }
+
+    .hamburger::after {
+        top: 8px;
+    }
+
+    .primary-navigation {
+        position: fixed;
+        inset: 15% 5% 35% 5%;
+        z-index: 1000;
+        background: hsl(0, 0%, 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-150%);
+        transition: transform ease-out 500ms;
+        padding-block: 1.5em;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateY(0%);
+
+    }
+
+    .primary-navigation a {
+        color: hsl(213, 9%, 39%);
+    }
+   
+    .contact-button {
+        background-color: hsl(51, 100%, 49%);
+
+    }
+
+
+    .mobile-nav-toggle[aria-expanded="true"] .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] .hamburger::before {
+        opacity: 0;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] .hamburger::after {
+        transform: translateY(-7.2px) rotate(-90deg);
+    }
+
+    .nav-item + .nav-item{
+        margin-top: 1.8em;
+    }
+
+    .header-text {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 4.5rem;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        margin-bottom: 2.5rem;
+        letter-spacing: .2em;
+        width: 80%;
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .header-text img {
+        margin-inline: auto;
+    }
+
+    .spacing-container p {
+        margin-bottom: 2.5rem;
+    }
+
+    .testimonial-section {
+        padding-block: 2rem 4rem;
+    }
+
+    .testimonial-section-clients {
+        margin-top: 3rem;
+    }
+
+    .last-section-bg-images {
+        width: 50%;
+    }
+    
+    .last-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    footer ul {
+        justify-content: space-between;
+    }
+
+   
+}
+
+@media (min-width:600px) and (max-width:1140px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2, h3, p, footer ul, span, .learn-more-link {
+         font-size: clamp(.8rem 3vw 1rem);
+    }
+
+
+}
+
+
+@media (min-width: 600px) {
+    .header-section > div {
+        width: 95%;
+        margin-inline: auto;
+    }
+
+    .second-section-text h2 {
+        width: 75%;
+    }
+    
+
+
+    .header-section {
+        padding-top: 2rem;
+        background-image: url(./images/desktop/image-header.jpg);
+       
+        min-height: 35rem;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .header-flex {
+        justify-content: space-between;
+    }
+
+    .primary-navigation {
+        gap: 3rem;
+    }
+    
+    .primary-navigation a {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .primary-navigation .contact-button {
+        color: hsl(212, 27%, 19%);
+        background-color: hsl(0, 0%, 100%);  
+      
+    }
+
+    .header-text {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-text h1 {
+        letter-spacing: .2em;
+    }
+
+    .header-text img {
+        margin-top: 3rem;
+    }
+
+    .second-section-bg-image {
+        background-image: url(./images/desktop/image-transform.jpg);
+        width: 50%;
+        order: 1;
+        min-height: 30rem;
+    } 
+
+    .main {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .second-section-text, .third-section-text {
+        width: 67%;
+    }
+
+    .third-section-bg-image {
+        background-image: url(./images/desktop/image-stand-out.jpg);
+        width: 50%;
+        min-height: 30rem;
+    }
+
+    .graphic-design-section, .photography-section {
+        width: 50%;
+        padding-bottom: 1rem;
+    }
+
+    .graphic-design-section {
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+    }
+
+    .photography-section {
+        background-image: url(./images/desktop/image-photography.jpg);
+    }
+
+    .spacing-container {
+        text-align: center;
+        width: 55%;
+        margin-inline: auto;
+    }
+     
+    .spacing-container h2 {
+        margin-inline: auto;
+    }
+
+    .testimonial-section {
+        padding-block: 5rem;
+    }
+
+    .testimonial-flex {
+        gap: 2rem;
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .testimonial-section-clients {
+        width: 33%;
+    }
+
+    .testimonial-section h3 {
+        margin-bottom: 3rem;
+    }
+
+    .milk-bottles {
+        background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+    }
+
+    .orange {
+        background-image: url(./images/desktop/image-gallery-orange.jpg);
+    }
+
+    .cone {
+        background-image: url(./images/desktop/image-gallery-cone.jpg);
+    }
+
+    .sugar-cubes {
+        background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+    }
+
+    .last-section-bg-images {
+        width: 25%;
+        min-height: 20rem;
+    }
+
+    footer ul {
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+    .primary-navigation .contact-button:hover {
+        background-color: hsl(198, 62%, 26%);
+        color: hsl(0, 0%, 100%);
+    }
+}
